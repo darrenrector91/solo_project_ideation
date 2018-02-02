@@ -1,5 +1,5 @@
 
-Prioritized list of features
+<h1>Prioritized list of features</h1>
 
 *	Add authentication
 *	Add cards for users to see catch details
