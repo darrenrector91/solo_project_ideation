@@ -23,6 +23,8 @@
 * Store more specific information on gear and populate dropdowns with data and remove text boxes
 *	Add openweather API
 
+<h1>ERD</h1>
+
 <img src="/images/ERD.png">
 
 
