@@ -16,6 +16,7 @@
 *	Populate table on user page with database GET request
 
 <h2>Stretch goals</h2>
+
 *	Add use of Google maps so users can place marker where they fished
 *	Utilize location services to determine latitude and longitude of fishing/catch location
 *	Add social feature to allow users to like and comment on catch cards
