@@ -1,5 +1,7 @@
+<h1>Solo Scope Prep</h1>
 
-<h1>Prioritized list of features</h1>
+
+<h2>Prioritized list of features</h2>
 
 *	Add authentication
 *	Add cards for users to see catch details
@@ -13,7 +15,7 @@
 *	Make app responsive so cards can be created on site if wanted
 *	Populate table on user page with database GET request
 
-Stretch goals
+<h2>Stretch goals</h2>
 *	Add use of Google maps so users can place marker where they fished
 *	Utilize location services to determine latitude and longitude of fishing/catch location
 *	Add social feature to allow users to like and comment on catch cards
