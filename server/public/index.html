@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="vendors/angular.min.js"></script>
+    <script src="vendors/angular-route.min.js"></script>
+
+    <!-- ANGULAR -->
+    <link href="vendors/angular-material.css" rel="stylesheet" type="text/css">
+    <script src="vendors/angular-animate.js" charset="utf-8"></script>
+    <script src="vendors/angular-aria.js" charset="utf-8"></script>
+    <script src="vendors/angular-messages.js" charset="utf-8"></script>
+    <script src="vendors/angular-material.js" charset="utf-8"></script>
+
+    <!-- SCRIPTS -->
+    <script src="scripts/client.js"></script>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body md-colors="{background: 'grey-A100'}" ng-app="soloApp" layout="column" layout-align="top-left">
+        <md-toolbar class="md-primary md-medium-tall">
+            <div class="md-toolbar-tools ">
+                <md-button class="md-icon-button logo" aria-label="button">
+                    <img class="logo-image" src="/images/Fish_icon.png">
+                </md-button>
+                <h1 md-truncate flex class="appTitle">iTrack</h1>
+                <link class="linkNav">
+                <a href="#!/search">
+                    Search</a>
+                </link>
+                <link class="linkNav">
+                <a href="#!/random">
+                    Random</a>
+                </link>
+            </div>
+        </md-toolbar>
+        <main ng-view></main>
+
+    </body>
+
+</html>
