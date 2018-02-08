@@ -15,11 +15,18 @@ ul {
 }
 
 .table {
-    width: 100%;
+    width: 90%;
     text-align: center;
+    margin-left: 5%;
 }
 
 .tblImage {
     width: 200px;
     height: 200px;
+    border: 2px solid rgb(53, 97, 180);
+    box-shadow: 5px 5px 5px grey;
+}
+
+.title {
+    text-align: center;
 }

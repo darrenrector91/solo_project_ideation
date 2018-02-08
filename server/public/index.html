@@ -26,7 +26,7 @@
 
     <!-- STYLES -->
     <link rel="stylesheet" href="styles/main.css">
-    <title>Document</title>
+    <title>ngTable Test</title>
 </head>
 <td>
 
@@ -34,9 +34,9 @@
 
 <body>
     <div ng-app="myApp">
-        <h1>Test AngularJS ng-table</h1>
-        <div ng-controller="tableControl as vm">
-            <table ng-table="vm.tableParams" class="table" show-filter="true">
+        <h1 class="title">ngTable Test</h1>
+        <div ng-controller="tableControl as vm" class="table-responsive">
+            <table ng-table="vm.tableParams" class="table table-condensed table-hover " show-filter="true">
                 <tr ng-repeat="user in $data">
                     <td title="'Date'" filter="{ date: 'text'}" sortable="'date'">
                         {{user.date}}</td>
@@ -52,7 +52,7 @@
                         {{user.reel}}</td>
                     <td title="'Tackle/Bait'">
                         {{user.tackle_bait}}</td>
-                    <td title="'Water'" filter="{ body_of_water: 'text'}" sortable="'body_of_water'">
+                    <td title="'Name of Water'" filter="{ body_of_water: 'text'}" sortable="'body_of_water'">
                         {{user.body_of_water}}</td>
                     <td><img class="tblImage" ng-src="{{user.image_url}}" alt=""></td>
                     <!-- <td title="'Image'" ng-src="{{user.image_url}}"> -->
