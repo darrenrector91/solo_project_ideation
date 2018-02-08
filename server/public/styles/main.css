@@ -6,4 +6,20 @@
 .logo-image {
     height: 100%;
     width: 100%;
+    margin-top: 20px;
+}
+
+ul {
+    display: inline;
+    list-style-type: none;
+}
+
+.table {
+    width: 100%;
+    text-align: center;
+}
+
+.tblImage {
+    width: 200px;
+    height: 200px;
 }

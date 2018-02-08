@@ -14,6 +14,9 @@
     <script src="vendors/angular-aria.js" charset="utf-8"></script>
     <script src="vendors/angular-messages.js" charset="utf-8"></script>
     <script src="vendors/angular-material.js" charset="utf-8"></script>
+    <script src="vendors/ng-infinite-scroll.js"></script>
+    <script src="vendors/ng-table.js"></script>
+    <link rel="stylesheet" href="vendors/ng-table.css">
 
     <!-- SCRIPTS -->
     <script src="scripts/client.js"></script>
@@ -22,28 +25,39 @@
     <link rel="stylesheet" href="styles/main.css">
     <title>Document</title>
 </head>
+<td>
+
+</td>
 
 <body>
-
-    <body md-colors="{background: 'grey-A100'}" ng-app="soloApp" layout="column" layout-align="top-left">
-        <md-toolbar class="md-primary md-medium-tall">
-            <div class="md-toolbar-tools ">
-                <md-button class="md-icon-button logo" aria-label="button">
-                    <img class="logo-image" src="/images/Fish_icon.png">
-                </md-button>
-                <h1 md-truncate flex class="appTitle">iTrack</h1>
-                <link class="linkNav">
-                <a href="#!/search">
-                    Search</a>
-                </link>
-                <link class="linkNav">
-                <a href="#!/random">
-                    Random</a>
-                </link>
-            </div>
-        </md-toolbar>
-        <main ng-view></main>
-
-    </body>
+    <div ng-app="myApp">
+        <h1>Test AngularJS ng-table</h1>
+        <div ng-controller="tableControl as vm">
+            <table ng-table="vm.tableParams" class="table" show-filter="true">
+                <tr ng-repeat="user in $data">
+                    <td title="'Date'" filter="{ date: 'text'}" sortable="'date'">
+                        {{user.date}}</td>
+                    <td title="'City'">
+                        {{user.city}}</td>
+                    <td title="'State'">
+                        {{user.state}}</td>
+                    <td title="'Species'">
+                        {{user.species}}</td>
+                    <td title="'Rod'">
+                        {{user.rod}}</td>
+                    <td title="'Reel'">
+                        {{user.reel}}</td>
+                    <td title="'Tackle/Bait'">
+                        {{user.tackle_bait}}</td>
+                    <td title="'Water'" filter="{ body_of_water: 'text'}" sortable="'body_of_water'">
+                        {{user.body_of_water}}</td>
+                    <td><img class="tblImage" ng-src="{{user.image_url}}" alt=""></td>
+                    <!-- <td title="'Image'" ng-src="{{user.image_url}}"> -->
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
 
 </html>
