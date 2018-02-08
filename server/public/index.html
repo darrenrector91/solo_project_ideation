@@ -54,9 +54,11 @@
                         {{user.tackle_bait}}</td>
                     <td title="'Name of Water'" filter="{ body_of_water: 'text'}" sortable="'body_of_water'">
                         {{user.body_of_water}}</td>
-                    <td><img class="tblImage" ng-src="{{user.image_url}}" alt=""></td>
+                    <td title="'Image'"><img class="tblImage" ng-src="{{user.image_url}}" alt=""></td>
                     <!-- <td title="'Image'" ng-src="{{user.image_url}}"> -->
                     </td>
+                    <td title="'Edit'"><button type="button" class="btn btn-primary">Edit</button></td>
+                    <td title="'Delete'"><button type="button" class="btn btn-danger">Delete</button></td>
                 </tr>
             </table>
         </div>

@@ -23,6 +23,7 @@ ul {
 .tblImage {
     width: 200px;
     height: 200px;
+    object-fit: cover;
     border: 2px solid rgb(53, 97, 180);
     box-shadow: 5px 5px 5px grey;
 }
